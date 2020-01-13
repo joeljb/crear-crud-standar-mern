@@ -10,7 +10,7 @@ import bodyParser from 'body-parser';
 //importamos para trabajar con http
 import http from 'http';
 
-// import dbMongo from './Servicios/dbMongo'; //importamos el modulo demongo db
+import dbMongo from './Servicios/dbMongo'; //importamos el modulo demongo db
 
 import middlewares from './Servicios/middleware' //importamos los middlewares
 
@@ -21,7 +21,7 @@ import app from './appRouter'; // importamos a router
 //importamos la ruta de programdor
 import routerProgramador from './Controladores/Programador/routerProgramador';
 
-// dbMongo() //iniciamos la conexion de mongodb
+dbMongo() //iniciamos la conexion de mongodb
 
 //creamo el servidor
 var server = http.Server(app);

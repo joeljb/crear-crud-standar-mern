@@ -4,3 +4,4 @@ dist-backend
 .env
 package-lock.json
 yarn-lock.json
+yarn.lock
