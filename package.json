@@ -1,0 +1,45 @@
+{
+   "name": "create-stack-mern",
+   "version": "0.0.1",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "build": "webpack --mode production && babel backend --out-dir dist-backend",
+      "frontend": "webpack-dev-server --open --mode development",
+      "backend": "nodemon babel index.js  --env dev",
+      "prod": "npm run build && node index.js --env prod"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@babel/cli": "^7.8.0",
+      "@babel/core": "^7.8.0",
+      "@babel/plugin-proposal-class-properties": "^7.4.4",
+      "@babel/preset-env": "^7.4.4",
+      "@babel/preset-react": "^7.0.0",
+      "babel-loader": "^8.0.6",
+      "css-loader": "^2.1.1",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.2.0",
+      "mini-css-extract-plugin": "^0.6.0",
+      "optimize-css-assets-webpack-plugin": "^5.0.1",
+      "path": "^0.12.7",
+      "style-loader": "^0.23.1",
+      "webpack": "^4.31.0",
+      "webpack-cli": "^3.3.2",
+      "webpack-dev-server": "^3.3.1"
+   },
+   "dependencies": {
+      "@babel/register": "^7.8.0",
+      "axios": "^0.19.1",
+      "body-parser": "^1.19.0",
+      "ejs": "^3.0.1",
+      "express": "^4.17.1",
+      "mongoose": "^5.8.7",
+      "nodemon": "^2.0.2",
+      "optimist": "^0.6.1",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6"
+   }
+}
