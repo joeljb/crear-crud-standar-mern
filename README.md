@@ -32,14 +32,3 @@ en desarrollo se ejecutan por separados
 
 
 
-ejecutar en produccion
-
-```
-npm run prod
-
-http://localhost:8000/
-```
-
-en produccion se compila todo el codigo
-
-
