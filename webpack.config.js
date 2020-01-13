@@ -58,7 +58,7 @@ const webpackConfig ={
     plugins:[
         new HtmlWebPackPlugin({
            template:"frontend/index.html",
-           filename:"./frontend/index.html",
+           filename:"./index.html",
         }),
         new MiniCssExtract({
             filename:'[name].css',
